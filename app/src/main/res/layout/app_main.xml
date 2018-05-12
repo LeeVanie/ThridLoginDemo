@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    android:background="@color/umeng_white"
+              android:gravity="center" >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/image"
+        android:src="@drawable/logo"/>
+
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+            android:text="@string/umeng_share"
+            android:id="@+id/umeng_share"
+            android:textColor="@color/umeng_white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image"
+        android:textSize="18dp"
+        android:background="@color/umeng_blue"/>
+    <Button android:layout_width="match_parent"  android:layout_height="45dp"
+            android:text="@string/umeng_auth"
+        android:textColor="@color/umeng_white"
+        android:background="@color/umeng_blue"
+        android:layout_below="@id/umeng_share"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/umeng_auth"/>
+    <Button android:layout_width="match_parent" android:layout_height="45dp"
+            android:text="获取用户信息"
+            android:id="@+id/umeng_getinfo"
+        android:textColor="@color/umeng_white"
+        android:background="@color/umeng_blue"
+        android:layout_below="@id/umeng_auth"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
